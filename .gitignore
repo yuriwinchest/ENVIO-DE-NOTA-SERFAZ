@@ -1,5 +1,6 @@
 sefaz-app/backend/.env
 sefaz-app/certificados/*.pfx
+sefaz-app/node_modules/
 sefaz-app/backend/node_modules/
 sefaz-app/frontend/node_modules/
 sefaz-app/frontend/dist/
