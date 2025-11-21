@@ -34,6 +34,10 @@ module.exports = {
     get certPassword() {
       const e = readEnv();
       return e.CERT_PASSWORD || process.env.CERT_PASSWORD || '';
+    },
+    get certPfxBase64() {
+      const e = readEnv();
+      return e.CERT_PFX_BASE64 || process.env.CERT_PFX_BASE64 || '';
     }
   }
 };

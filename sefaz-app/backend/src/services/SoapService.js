@@ -100,18 +100,27 @@ class SoapService {
     }
 
     getHttpsAgent() {
-        if (!env.sefaz.certPath) {
+        try {
+            if (env.sefaz.certPath) {
+                const pfxFile = fs.readFileSync(env.sefaz.certPath);
+                return new https.Agent({
+                    pfx: pfxFile,
+                    passphrase: env.sefaz.certPassword,
+                    rejectUnauthorized: false
+                });
+            }
+
+            if (env.sefaz.certPfxBase64) {
+                const pfxBuf = Buffer.from(env.sefaz.certPfxBase64, 'base64');
+                return new https.Agent({
+                    pfx: pfxBuf,
+                    passphrase: env.sefaz.certPassword,
+                    rejectUnauthorized: false
+                });
+            }
+
             console.warn('AVISO: Certificado não configurado. A comunicação SSL com a SEFAZ falhará.');
             return new https.Agent({ rejectUnauthorized: false });
-        }
-
-        try {
-            const pfx = fs.readFileSync(env.sefaz.certPath);
-            return new https.Agent({
-                pfx: pfx,
-                passphrase: env.sefaz.certPassword,
-                rejectUnauthorized: false
-            });
         } catch (e) {
             console.error('Erro ao carregar certificado para SSL:', e);
             throw new Error('Falha ao carregar certificado digital para comunicação HTTPS');
