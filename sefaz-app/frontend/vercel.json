@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "https://envio-nota-serfaz-api.loca.lt/api/:path*"
+    }
+  ]
+}
