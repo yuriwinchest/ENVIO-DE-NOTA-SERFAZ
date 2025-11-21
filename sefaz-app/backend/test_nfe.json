@@ -1,0 +1,137 @@
+{
+    "ide": {
+        "cUF": 35,
+        "cNF": "12345678",
+        "natOp": "VENDA DE MERCADORIA",
+        "mod": 55,
+        "serie": 1,
+        "nNF": 100,
+        "dhEmi": "2023-10-27T10:00:00-03:00",
+        "tpNF": 1,
+        "idDest": 1,
+        "cMunFG": 3550308,
+        "tpImp": 1,
+        "tpEmis": 1,
+        "cDV": 0,
+        "tpAmb": 2,
+        "finNFe": 1,
+        "indFinal": 1,
+        "indPres": 1,
+        "procEmi": 0,
+        "verProc": "1.0.0"
+    },
+    "emit": {
+        "CNPJ": "12345678000195",
+        "xNome": "EMPRESA TESTE LTDA",
+        "xFant": "EMPRESA TESTE",
+        "enderEmit": {
+            "xLgr": "RUA TESTE",
+            "nro": "123",
+            "xBairro": "CENTRO",
+            "cMun": 3550308,
+            "xMun": "SAO PAULO",
+            "UF": "SP",
+            "CEP": "01001000",
+            "cPais": 1058,
+            "xPais": "BRASIL",
+            "fone": "1133334444"
+        },
+        "IE": "123456789012",
+        "CRT": 3
+    },
+    "dest": {
+        "CNPJ": "98765432000198",
+        "xNome": "CLIENTE TESTE SA",
+        "enderDest": {
+            "xLgr": "AVENIDA TESTE",
+            "nro": "456",
+            "xBairro": "JARDINS",
+            "cMun": 3550308,
+            "xMun": "SAO PAULO",
+            "UF": "SP",
+            "CEP": "01002000",
+            "cPais": 1058,
+            "xPais": "BRASIL",
+            "fone": "1199998888"
+        },
+        "indIEDest": 1,
+        "IE": "987654321098",
+        "email": "cliente@teste.com"
+    },
+    "det": [
+        {
+            "cProd": "PROD001",
+            "xProd": "PRODUTO TESTE 1",
+            "NCM": "12345678",
+            "CFOP": 5102,
+            "uCom": "UN",
+            "qCom": 10,
+            "vUnCom": 10.00,
+            "vProd": 100.00,
+            "uTrib": "UN",
+            "qTrib": 10,
+            "vUnTrib": 10.00,
+            "indTot": 1,
+            "imposto": {
+                "ICMS": {
+                    "CST": "00",
+                    "orig": 0,
+                    "pICMS": 18
+                },
+                "PIS": {
+                    "CST": "01",
+                    "pPIS": 1.65
+                },
+                "COFINS": {
+                    "CST": "01",
+                    "pCOFINS": 7.60
+                }
+            }
+        },
+        {
+            "cProd": "PROD002",
+            "xProd": "PRODUTO TESTE 2 (ST)",
+            "NCM": "87654321",
+            "CFOP": 5405,
+            "uCom": "PC",
+            "qCom": 5,
+            "vUnCom": 20.00,
+            "vProd": 100.00,
+            "uTrib": "PC",
+            "qTrib": 5,
+            "vUnTrib": 20.00,
+            "indTot": 1,
+            "imposto": {
+                "ICMS": {
+                    "CST": "10",
+                    "orig": 0,
+                    "pICMS": 18,
+                    "pMVAST": 50,
+                    "pICMSST": 18
+                },
+                "PIS": {
+                    "CST": "01",
+                    "pPIS": 1.65
+                },
+                "COFINS": {
+                    "CST": "01",
+                    "pCOFINS": 7.60
+                }
+            }
+        }
+    ],
+    "transp": {
+        "modFrete": 9
+    },
+    "pag": {
+        "detPag": [
+            {
+                "tPag": "01",
+                "vPag": 200.00
+            }
+        ]
+    },
+    "infAdic": {
+        "infCpl": "Documento emitido para fins de teste."
+    }
+}

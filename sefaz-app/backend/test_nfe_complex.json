@@ -1,0 +1,126 @@
+{
+    "ide": {
+        "cUF": "35",
+        "cNF": "00462186",
+        "natOp": "VENDA DE MERCADORIA",
+        "mod": "55",
+        "serie": "1",
+        "nNF": "1001",
+        "dhEmi": "2023-10-27T10:00:00-03:00",
+        "tpNF": "1",
+        "idDest": "1",
+        "cMunFG": "3550308",
+        "tpImp": "1",
+        "tpEmis": "1",
+        "cDV": "0",
+        "tpAmb": "2",
+        "finNFe": "1",
+        "indFinal": "1",
+        "indPres": "1",
+        "procEmi": "0",
+        "verProc": "1.0.0"
+    },
+    "emit": {
+        "CNPJ": "12345678000195",
+        "xNome": "EMPRESA EMITENTE LTDA",
+        "xFant": "MINHA EMPRESA",
+        "enderEmit": {
+            "xLgr": "RUA TESTE",
+            "nro": "100",
+            "xBairro": "CENTRO",
+            "cMun": "3550308",
+            "xMun": "SAO PAULO",
+            "UF": "SP",
+            "CEP": "01001000",
+            "cPais": "1058",
+            "xPais": "BRASIL",
+            "fone": "1133334444"
+        },
+        "IE": "123456789",
+        "CRT": "1"
+    },
+    "dest": {
+        "CNPJ": "98765432000198",
+        "xNome": "EMPRESA DESTINATARIA LTDA",
+        "enderDest": {
+            "xLgr": "AVENIDA PAULISTA",
+            "nro": "1000",
+            "xBairro": "BELA VISTA",
+            "cMun": "3550308",
+            "xMun": "SAO PAULO",
+            "UF": "SP",
+            "CEP": "01310100",
+            "cPais": "1058",
+            "xPais": "BRASIL"
+        },
+        "indIEDest": "1",
+        "IE": "987654321"
+    },
+    "det": [
+        {
+            "prod": {
+                "cProd": "PROD001",
+                "cEAN": "SEM GTIN",
+                "xProd": "PRODUTO TESTE SIMPLES NACIONAL",
+                "NCM": "12345678",
+                "CFOP": "5102",
+                "uCom": "UN",
+                "qCom": "10.0000",
+                "vUnCom": "10.0000",
+                "vProd": "100.00",
+                "cEANTrib": "SEM GTIN",
+                "uTrib": "UN",
+                "qTrib": "10.0000",
+                "vUnTrib": "10.0000",
+                "indTot": "1"
+            },
+            "imposto": {
+                "ICMS": {
+                    "CSOSN": "101",
+                    "orig": "0",
+                    "pCredSN": "2.50"
+                },
+                "PIS": {
+                    "CST": "01",
+                    "pPIS": "1.65"
+                },
+                "COFINS": {
+                    "CST": "01",
+                    "pCOFINS": "7.60"
+                }
+            }
+        }
+    ],
+    "total": {
+        "ICMSTot": {
+            "vBC": "0.00",
+            "vICMS": "0.00",
+            "vBCST": "0.00",
+            "vST": "0.00",
+            "vProd": "100.00",
+            "vFrete": "0.00",
+            "vSeg": "0.00",
+            "vDesc": "0.00",
+            "vII": "0.00",
+            "vIPI": "0.00",
+            "vPIS": "1.65",
+            "vCOFINS": "7.60",
+            "vOutro": "0.00",
+            "vNF": "109.25"
+        }
+    },
+    "transp": {
+        "modFrete": "9"
+    },
+    "pag": {
+        "detPag": [
+            {
+                "tPag": "01",
+                "vPag": "109.25"
+            }
+        ]
+    },
+    "infAdic": {
+        "infCpl": "DOCUMENTO EMITIDO POR ME OU EPP OPTANTE PELO SIMPLES NACIONAL"
+    }
+}

@@ -1,0 +1,16 @@
+Iniciando teste local...
+DEBUG: calcularImpostos
+DEBUG: item.prod {"cProd":"PROD001","cEAN":"SEM GTIN","xProd":"PRODUTO TESTE SIMPLES NACIONAL","NCM":"12345678","CFOP":"5102","uCom":"UN","qCom":"10.0000","vUnCom":"10.0000","vProd":"100.00","cEANTrib":"SEM GTIN","uTrib":"UN","qTrib":"10.0000","vUnTrib":"10.0000","indTot":"1"}
+DEBUG: emitente.CRT 1
+NFe gerada com sucesso.
+Erro no teste local: ReferenceError: total is not defined
+    at XMLGenerator.buildDet (D:\NotaSEFAZ\sefaz-app\backend\src\utils\XMLGenerator.js:126:31)
+    at D:\NotaSEFAZ\sefaz-app\backend\src\utils\XMLGenerator.js:25:18
+    at Array.forEach (<anonymous>)
+    at XMLGenerator.generateXML (D:\NotaSEFAZ\sefaz-app\backend\src\utils\XMLGenerator.js:24:28)
+    at Object.<anonymous> (D:\NotaSEFAZ\sefaz-app\backend\test_local.js:12:30)
+    at Module._compile (node:internal/modules/cjs/loader:1706:14)
+    at Object..js (node:internal/modules/cjs/loader:1839:10)
+    at Module.load (node:internal/modules/cjs/loader:1441:32)
+    at Function._load (node:internal/modules/cjs/loader:1263:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)

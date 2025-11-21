@@ -1,0 +1,22 @@
+{
+    "name": "sefaz-app",
+    "version": "1.0.0",
+    "description": "Sistema de Emissão de NFe com integração SEFAZ",
+    "scripts": {
+        "start": "concurrently \"npm run backend\" \"npm run frontend\"",
+        "backend": "cd backend && node src/index.js",
+        "frontend": "cd frontend && npm run dev",
+        "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+        "install-all": "cd backend && npm install && cd ../frontend && npm install"
+    },
+    "keywords": [
+        "nfe",
+        "sefaz",
+        "nota-fiscal"
+    ],
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
