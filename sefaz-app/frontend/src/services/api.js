@@ -5,7 +5,7 @@ const baseURL =
     ? import.meta.env.VITE_API_URL
     : (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.DEV)
       ? 'http://localhost:3000/api'
-      : '/api';
+      : 'https://envio-de-nota-serfaz-production.up.railway.app/api';
 
 const api = axios.create({ baseURL });
 
